@@ -8,26 +8,27 @@ import SwiftUI
 
 struct ChatScreen: View {
     @EnvironmentObject private var userInfo: UserInfo
-    @StateObject private var model = ChatScreenModel()
+    @ObservedObject var viewModel: ChatViewModel
     @State private var message = ""
     
-    private func onAppear() {
-        model.connect(username: userInfo.username, userID: userInfo.userID)
+    private func onDisappear() {
+        viewModel.updateActiveChat()
     }
     
-    private func onDisappear() {
-        model.disconnect()
+    private func onAppear() {
+        viewModel.getActiveChat()
+        print("chat screen is being appeared")
     }
     
     private func onCommit() {
         if !message.isEmpty {
-            model.send(text: message)
+            viewModel.send(text: message)
             message = ""
         }
     }
     
     private func scrollToLastMessage(proxy: ScrollViewProxy) {
-        if let lastMessage = model.messages.last {
+        if let lastMessage = viewModel.messages.last {
             withAnimation(.easeOut(duration: 0.4)) {
                 proxy.scrollTo(lastMessage.id, anchor: .bottom)
             }
@@ -40,14 +41,13 @@ struct ChatScreen: View {
             ScrollView {
                 ScrollViewReader { proxy in
                     LazyVStack(spacing: 8) {
-                        ForEach(model.messages) { message in
+                        ForEach(viewModel.activeChat!.messages) { message in
                             ChatMessageRow(message: message,
-                                           isUser: message.userID == userInfo.userID)
-                                .id(message.id)
-                            
+                                           isUser: message.senderID == userInfo.userID)
+                                .id(message.id)                            
                         }
                     }
-                    .onChange(of: model.messages.count) { _ in
+                    .onChange(of: viewModel.messages.count) { _ in
                         scrollToLastMessage(proxy: proxy)
                     }
                 }
@@ -68,7 +68,7 @@ struct ChatScreen: View {
             }
             .padding()
         }
-        .onAppear(perform: onAppear)
         .onDisappear(perform: onDisappear)
+        .onAppear(perform: onAppear)
     }
 }

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC13D71427981C1D0048D4BF /* ChatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71327981C1D0048D4BF /* ChatsScreen.swift */; };
+		DC13D71527981C1D0048D4BF /* ChatsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71327981C1D0048D4BF /* ChatsScreen.swift */; };
+		DC13D71727981D1C0048D4BF /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71627981D1C0048D4BF /* ChatRow.swift */; };
+		DC13D71827981D1C0048D4BF /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71627981D1C0048D4BF /* ChatRow.swift */; };
+		DC13D71B279822220048D4BF /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71A279822220048D4BF /* ChatViewModel.swift */; };
+		DC13D71C279822220048D4BF /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71A279822220048D4BF /* ChatViewModel.swift */; };
+		DC13D71E279BEC1B0048D4BF /* GetReceiverUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71D279BEC1B0048D4BF /* GetReceiverUsernameView.swift */; };
+		DC13D71F279BEC1B0048D4BF /* GetReceiverUsernameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D71D279BEC1B0048D4BF /* GetReceiverUsernameView.swift */; };
+		DC13D721279EC9350048D4BF /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D720279EC9350048D4BF /* StorageManager.swift */; };
+		DC13D722279EC9350048D4BF /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D720279EC9350048D4BF /* StorageManager.swift */; };
+		DC13D726279EE27E0048D4BF /* SCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D725279EE27E0048D4BF /* SCError.swift */; };
+		DC13D727279EE27E0048D4BF /* SCError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13D725279EE27E0048D4BF /* SCError.swift */; };
 		DCAC06872785910D0099ED7D /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06862785910D0099ED7D /* Tests_iOS.swift */; };
 		DCAC06892785910D0099ED7D /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06882785910D0099ED7D /* Tests_iOSLaunchTests.swift */; };
 		DCAC06932785910D0099ED7D /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06922785910D0099ED7D /* Tests_macOS.swift */; };
@@ -19,8 +31,6 @@
 		DCAC069B2785910D0099ED7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCAC06702785910D0099ED7D /* Assets.xcassets */; };
 		DCAC06AB2785911E0099ED7D /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06AA2785911E0099ED7D /* ChatScreen.swift */; };
 		DCAC06AC2785911E0099ED7D /* ChatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06AA2785911E0099ED7D /* ChatScreen.swift */; };
-		DCAC06AE2785A7A70099ED7D /* ChatScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06AD2785A7A70099ED7D /* ChatScreenModel.swift */; };
-		DCAC06AF2785A7A70099ED7D /* ChatScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06AD2785A7A70099ED7D /* ChatScreenModel.swift */; };
 		DCAC06B12789DDEF0099ED7D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06B02789DDEF0099ED7D /* Models.swift */; };
 		DCAC06B22789DDEF0099ED7D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06B02789DDEF0099ED7D /* Models.swift */; };
 		DCAC06B4278BFA1D0099ED7D /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAC06B3278BFA1D0099ED7D /* UserInfo.swift */; };
@@ -49,6 +59,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DC13D71327981C1D0048D4BF /* ChatsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsScreen.swift; sourceTree = "<group>"; };
+		DC13D71627981D1C0048D4BF /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		DC13D71A279822220048D4BF /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		DC13D71D279BEC1B0048D4BF /* GetReceiverUsernameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetReceiverUsernameView.swift; sourceTree = "<group>"; };
+		DC13D720279EC9350048D4BF /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		DC13D725279EE27E0048D4BF /* SCError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCError.swift; sourceTree = "<group>"; };
 		DCAC066E2785910C0099ED7D /* SwiftChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChatApp.swift; sourceTree = "<group>"; };
 		DCAC066F2785910C0099ED7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DCAC06702785910D0099ED7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,7 +78,6 @@
 		DCAC06922785910D0099ED7D /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		DCAC06942785910D0099ED7D /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		DCAC06AA2785911E0099ED7D /* ChatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreen.swift; sourceTree = "<group>"; };
-		DCAC06AD2785A7A70099ED7D /* ChatScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatScreenModel.swift; sourceTree = "<group>"; };
 		DCAC06B02789DDEF0099ED7D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		DCAC06B3278BFA1D0099ED7D /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		DCAC06B6278C6EFE0099ED7D /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
@@ -101,6 +116,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DC13D719279820090048D4BF /* ChatList */ = {
+			isa = PBXGroup;
+			children = (
+				DC13D71327981C1D0048D4BF /* ChatsScreen.swift */,
+				DC13D71D279BEC1B0048D4BF /* GetReceiverUsernameView.swift */,
+				DC13D71A279822220048D4BF /* ChatViewModel.swift */,
+				DC13D71627981D1C0048D4BF /* ChatRow.swift */,
+			);
+			path = ChatList;
+			sourceTree = "<group>";
+		};
+		DC13D723279EE2510048D4BF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				DC13D724279EE25F0048D4BF /* Alerts */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		DC13D724279EE25F0048D4BF /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				DC13D725279EE27E0048D4BF /* SCError.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		DC13D72827A165DB0048D4BF /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				DCAC06B9278C72980099ED7D /* ChatMessageRow.swift */,
+				DCAC06AA2785911E0099ED7D /* ChatScreen.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		DCAC06682785910C0099ED7D = {
 			isa = PBXGroup;
 			children = (
@@ -115,14 +166,15 @@
 		DCAC066D2785910C0099ED7D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				DC13D723279EE2510048D4BF /* Utilities */,
+				DC13D719279820090048D4BF /* ChatList */,
+				DC13D72827A165DB0048D4BF /* Chat */,
 				DCAC066E2785910C0099ED7D /* SwiftChatApp.swift */,
 				DCAC06B02789DDEF0099ED7D /* Models.swift */,
 				DCAC06B3278BFA1D0099ED7D /* UserInfo.swift */,
+				DC13D720279EC9350048D4BF /* StorageManager.swift */,
 				DCAC066F2785910C0099ED7D /* ContentView.swift */,
 				DCAC06B6278C6EFE0099ED7D /* SettingsScreen.swift */,
-				DCAC06AA2785911E0099ED7D /* ChatScreen.swift */,
-				DCAC06AD2785A7A70099ED7D /* ChatScreenModel.swift */,
-				DCAC06B9278C72980099ED7D /* ChatMessageRow.swift */,
 				DCAC06702785910D0099ED7D /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -325,12 +377,17 @@
 			files = (
 				DCAC06982785910D0099ED7D /* ContentView.swift in Sources */,
 				DCAC06B7278C6EFE0099ED7D /* SettingsScreen.swift in Sources */,
-				DCAC06AE2785A7A70099ED7D /* ChatScreenModel.swift in Sources */,
+				DC13D71B279822220048D4BF /* ChatViewModel.swift in Sources */,
+				DC13D721279EC9350048D4BF /* StorageManager.swift in Sources */,
 				DCAC06AB2785911E0099ED7D /* ChatScreen.swift in Sources */,
+				DC13D71427981C1D0048D4BF /* ChatsScreen.swift in Sources */,
+				DC13D726279EE27E0048D4BF /* SCError.swift in Sources */,
 				DCAC06BA278C72980099ED7D /* ChatMessageRow.swift in Sources */,
 				DCAC06962785910D0099ED7D /* SwiftChatApp.swift in Sources */,
 				DCAC06B4278BFA1D0099ED7D /* UserInfo.swift in Sources */,
+				DC13D71727981D1C0048D4BF /* ChatRow.swift in Sources */,
 				DCAC06B12789DDEF0099ED7D /* Models.swift in Sources */,
+				DC13D71E279BEC1B0048D4BF /* GetReceiverUsernameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,12 +397,17 @@
 			files = (
 				DCAC06992785910D0099ED7D /* ContentView.swift in Sources */,
 				DCAC06B8278C6EFE0099ED7D /* SettingsScreen.swift in Sources */,
-				DCAC06AF2785A7A70099ED7D /* ChatScreenModel.swift in Sources */,
+				DC13D71C279822220048D4BF /* ChatViewModel.swift in Sources */,
+				DC13D722279EC9350048D4BF /* StorageManager.swift in Sources */,
 				DCAC06AC2785911E0099ED7D /* ChatScreen.swift in Sources */,
+				DC13D71527981C1D0048D4BF /* ChatsScreen.swift in Sources */,
+				DC13D727279EE27E0048D4BF /* SCError.swift in Sources */,
 				DCAC06BB278C72980099ED7D /* ChatMessageRow.swift in Sources */,
 				DCAC06972785910D0099ED7D /* SwiftChatApp.swift in Sources */,
 				DCAC06B5278BFA1D0099ED7D /* UserInfo.swift in Sources */,
+				DC13D71827981D1C0048D4BF /* ChatRow.swift in Sources */,
 				DCAC06B22789DDEF0099ED7D /* Models.swift in Sources */,
+				DC13D71F279BEC1B0048D4BF /* GetReceiverUsernameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

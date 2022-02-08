@@ -8,13 +8,23 @@ import Foundation
 
 struct SubmittedChatMessage: Encodable {
     let message: String
-    let user: String
-    let userID: UUID
+    let sender: String
+    let senderID: UUID
+    let receiver: String
 }
-struct ReceivingChatMessage: Decodable, Identifiable {
+struct ReceivingChatMessage: Codable, Identifiable {
     let date: Date
     let id: UUID
     let message: String
-    let user: String
-    let userID: UUID
+    let sender: String
+    let senderID: UUID
+    let receiver: String
+}
+struct Message: Identifiable, Codable {
+    let id : UUID
+    var messages: [ReceivingChatMessage]
+}
+struct User: Identifiable, Codable {
+    var id: UUID
+    var username: String
 }

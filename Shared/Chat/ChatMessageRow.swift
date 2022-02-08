@@ -24,7 +24,7 @@ struct ChatMessageRow: View {
             }
             VStack(alignment: .leading, spacing: 6) {
                 HStack {
-                    Text(message.user)
+                    Text(message.sender)
                         .fontWeight(.bold)
                         .font(.system(size: 12))
                     
